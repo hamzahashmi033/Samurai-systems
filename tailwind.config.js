@@ -12,23 +12,16 @@ module.exports = {
         Black: "#0B0A0A",
         White: "#FAFAFA",
       },
+      fontFamily: {
+        Neuropal: ["var(--neuropal)"],
+        ClashDisplay: ["var(--clashdisplay)"],
+      },
       screens: {
-        xs: { min: "250" },
-        // => @media (min-width: 640px and max-width: 767px) { ... }
-        sm: { min: "640px", max: "767px" },
-        // => @media (min-width: 640px and max-width: 767px) { ... }
-
-        md: { min: "768px", max: "1023px" },
-        // => @media (min-width: 768px and max-width: 1023px) { ... }
-
-        lg: { min: "1024px", max: "1279px" },
-        // => @media (min-width: 1024px and max-width: 1279px) { ... }
-
-        xl: { min: "1280px", max: "1535px" },
-        // => @media (min-width: 1280px and max-width: 1535px) { ... }
-
-        "2xl": { min: "1536px" },
-        // => @media (min-width: 1536px) { ... }
+        xs: "0px", // Custom xs screen starting from 0px
+        sm: "640px", // Default sm screen starts from 640px in Tailwind
+        md: "768px", // Default md screen starts from 768px in Tailwind
+        lg: "1024px", // Default lg screen starts from 1024px in Tailwind
+        xl: "1280px", // Default xl screen starts from 1280px in Tailwind
       },
     },
     plugins: [],

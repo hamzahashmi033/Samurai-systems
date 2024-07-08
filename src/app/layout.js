@@ -1,7 +1,17 @@
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const neuropal = localFont({
+  src: "../fonts/NEUROPOL.ttf",
+  variable: "--neuropal",
+});
+const clashdisplay = localFont({
+  src: "../fonts/ClashDisplay-Variable.ttf",
+  variable: "--clashdisplay",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${neuropal.variable} ${clashdisplay.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
