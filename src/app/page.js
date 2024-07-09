@@ -7,6 +7,10 @@ import Hero from "./components/Hero";
 // import MainFooter from "./components/MainFooter";
 // import SolutionsSecondComp from "./components/SolutionsSecondComp";
 import "@/app/utils/page.css";
+import HeroSecond from "./components/HeroSecond";
+import Client from "./components/Client";
+import Solutions from "./components/SolutionsScroll";
+import Foot from "./components/Foot";
 
 export default function Home() {
   useEffect(() => {
@@ -70,13 +74,20 @@ export default function Home() {
         <Hero />
       </section>
       <section className="panel second">
-        <Hero />
+        <HeroSecond />
       </section>
+      <section className="panel third">
+        <Client />
+      </section>
+        <section className="panel third">
+        <Solutions />
+      </section> 
+      <section className="panel fourth relative">
+        <Foot />
+      </section>
+    
 
-      {/* <section className="panel third">
-        <Hero />
-      </section>
-      <section className="panel fourth">
+      {/* <section className="panel fourth">
         <Hero />
       </section>
       <section className="panel fifth">
@@ -90,7 +101,7 @@ export default function Home() {
       </section>
       <section className="panel eigth">
         <Hero />
-      </section> */}
+      </section> */} 
 
       {/* <section className="panel third"> */}
       {/* <Solutions /> */}
