@@ -8,13 +8,14 @@ const Typewriter = dynamic(() => import("typewriter-effect"), { ssr: false });
 const Hero = () => {
   return (
     <div className="bg-Black xs:overflow-hidden h-screen">
-      <div className="sm:container lg:container  xs:px-4 sm:px-8 lg:px-4  relative  sm:mx-auto  ">
+      <div className="sm:container lg:container  xs:px-4 sm:px-8 lg:px-8  relative  sm:mx-auto  ">
         <Nav />
         <Image
-          src={"/Isolation_Mode.png"}
+          src={"/Isola.svg"}
           width={800}
           height={300}
-          className="absolute max-w-[370px] 2xl:max-w-[800px] xl:max-w-[500px] top-0 right-0"
+          style={{ right: "-150px" }}
+          className="absolute max-w-[370px] opacity-[20%] 2xl:max-w-[800px] xl:max-w-[500px] top-0 "
         />
         <div className="font-ClashDisplay 2xl:mt-20 sm:mt-12 xs:mt-4">
           <h1 className="text-white  font-ClashDisplay ">
@@ -36,7 +37,7 @@ const Hero = () => {
                 &nbsp;Solutions
               </span>
             </div>
-            <br />{" "}
+
             <span className="text-White font-[500] 2xl:text-[67px] xl:text-[48px] xs:text-[24px]">
               Samurai Systems
             </span>
@@ -56,11 +57,11 @@ const Hero = () => {
             </span>
           </p>
         </div>
-        <div className="xs:mt-14 2xl:mt-16  sm:mt-12 font-ClashDisplay flex gap-4">
-          <button className="bg-Red text-white xs:px-[16px] xs:py-[2px] xl:px-[32px] xl:py-[6px] 2xl:py-[10px] 2xl:px-[41px]">
+        <div className="xs:mt-14 2xl:mt-16 xl:mt-8  sm:mt-12 font-ClashDisplay flex gap-4">
+          <button className="bg-Red text-white rounded-[5px] xs:px-[16px] xs:py-[2px] xl:px-[32px] xl:py-[6px] 2xl:py-[10px] 2xl:px-[41px]">
             Get a Quote
           </button>
-          <button className="border border-Red xl:px-[32px] xs:px-[16px] xs:py-[2px] xl:py-[6px] 2xl:py-[10px] 2xl:px-[41px] text-white">
+          <button className="border border-Red xl:px-[32px] rounded-[5px] xs:px-[16px] xs:py-[2px] xl:py-[6px] 2xl:py-[10px] 2xl:px-[41px] text-white">
             Our Services
           </button>
         </div>
@@ -71,7 +72,7 @@ const Hero = () => {
               "linear-gradient(271.18deg, rgba(58, 58, 58, 0) -4.85%, #3a3a3a 147.42%)",
             borderImageSlice: "1",
           }}
-          className="text-white xs:flex-row font-ClashDisplay xs:p-2  sm:w-[50vw] 2xl:gap-16   flex gap-8 xs:gap-2 xs:mt-14 2xl:mt-40 xl:mt-4  sm:mt-10"
+          className="text-white xs:flex-row font-ClashDisplay xs:p-2 xl:w-[40vw]  sm:w-[50vw] 2xl:gap-16 xl:gap-10 sm:gap-6   flex gap-8 xs:gap-2 xs:mt-14 2xl:mt-40 xl:mt-4  sm:mt-10"
         >
           <p className="font-[300]">
             <span className="text-Red font-[600]">2000+</span>

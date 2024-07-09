@@ -47,7 +47,7 @@ const Nav = () => {
         <div className="flex items-center lg:hidden">
           <button
             type="button"
-            className="text-white bg-[#C92127] p-1 rounded lg:hidden"
+            className="text-white bg-[#C92127] xl:px-[32px]  xs:px-[16px] xs:py-[2px] xl:py-[6px] 2xl:py-[10px] 2xl:px-[41px] rounded-[5px] lg:hidden"
           >
             Get A Quote
           </button>
@@ -90,7 +90,7 @@ const Nav = () => {
         </ul>
         <button
           type="button"
-          className="hidden lg:block text-white bg-[#C92127] p-1 rounded xs:p-[2px]"
+          className="hidden lg:block text-white bg-[#C92127] xl:px-[32px]  xs:px-[16px] xs:py-[2px] xl:py-[6px] 2xl:py-[10px] 2xl:px-[41px] rounded-[5px]"
         >
           Get A Quote
         </button>

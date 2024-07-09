@@ -1,12 +1,9 @@
 "use client";
 import { useEffect } from "react";
-// import Client from "./components/Client";s
 import Hero from "./components/Hero";
-// import HeroSecond from "./components/HeroSecond";
-// import Solutions from "./components/SolutionsScroll";
-// import MainFooter from "./components/MainFooter";
-// import SolutionsSecondComp from "./components/SolutionsSecondComp";
+
 import "@/app/utils/page.css";
+import HeroSecond from "./components/HeroSecondComp";
 
 export default function Home() {
   useEffect(() => {
@@ -70,55 +67,11 @@ export default function Home() {
         <Hero />
       </section>
       <section className="panel second">
-        <Hero />
+        <HeroSecond />
       </section>
 
-      {/* <section className="panel third">
-        <Hero />
-      </section>
-      <section className="panel fourth">
-        <Hero />
-      </section>
-      <section className="panel fifth">
-        <Hero />
-      </section>
-      <section className="panel sixth">
-        <Hero />
-      </section>
-      <section className="panel seventh">
-        <Hero />
-      </section>
-      <section className="panel eigth">
-        <Hero />
-      </section> */}
-
-      {/* <section className="panel third"> */}
-      {/* <Solutions /> */}
-      {/* </section> */}
-      {/* <section className="panel fourth">
-        <SolutionsSecondComp />
-      </section> */}
-      {/* <section className="panel fifth">
-        <Client />
-      </section>
-      <section className="panel sixth">
-        <MainFooter />
-      </section> */}
-      {/* Alternatively, you can use these sections for testing */}
-      {/* <section className="panel red">ONE</section>
-      <section className="panel orange">TWO</section>
-      <section className="panel purple">THREE</section>
-      <section className="panel green">FOUR</section>
-      <header>
-        <a href="https://greensock.com/scrolltrigger">
-          <img
-            className="greensock-icon"
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg"
-            width="200"
-            height="64"
-          />
-        </a>
-      </header> */}
+      {/* <Hero /> */}
+      {/* <HeroSecond /> */}
     </>
   );
 }

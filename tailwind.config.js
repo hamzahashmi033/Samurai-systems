@@ -1,3 +1,5 @@
+const { Poppins } = require("next/font/google");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,6 +15,7 @@ module.exports = {
         White: "#FAFAFA",
       },
       fontFamily: {
+        Poppins: "Poppins",
         Neuropal: ["var(--neuropal)"],
         ClashDisplay: ["var(--clashdisplay)"],
       },
