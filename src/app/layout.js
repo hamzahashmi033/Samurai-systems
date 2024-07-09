@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 const neuropal = localFont({
-  src: "../fonts/NEUROPOL.ttf",
+  src: "../fonts/Neuropol.ttf",
   variable: "--neuropal",
 });
 const clashdisplay = localFont({
