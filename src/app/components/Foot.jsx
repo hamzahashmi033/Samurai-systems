@@ -1,5 +1,5 @@
 import React from 'react'
-import ReUse from './ReUse'
+import ReUse from './Reuse'
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import Image from 'next/image';
 const Foot = () => {
