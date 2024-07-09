@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import "@/app/utils/page.css";
 import HeroSecond from "./components/HeroSecondComp";
 import Client from "./components/Client";
+import Foot from "./components/Foot";
 
 export default function Home() {
   useEffect(() => {
@@ -77,6 +78,8 @@ export default function Home() {
       {/* <section className="panel third">
         <Client />
       </section> */}
+
+      <Foot />
     </>
   );
 }
