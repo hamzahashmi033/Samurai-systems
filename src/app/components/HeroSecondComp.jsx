@@ -59,7 +59,7 @@ const HeroSecondComp = () => {
           background:
             "linear-gradient(180deg, rgba(24, 24, 21, 0.25) 0%, rgba(24, 24, 21, 0.25) 100%)",
         }}
-        className="  xl:container 2xl:h-[80vh]  xs:w-[95vw]  bg my-auto border border-[#3A3A3A] rounded-2xl px-4 sm:px-10 xs:py-2 xl:h-[95vh] lg:h-[90vh] sm:py-8 mx-auto"
+        className="  xl:container overflow-hidden 2xl:h-[80vh]  xs:w-[95vw]  bg my-auto border border-[#3A3A3A] rounded-2xl px-4 sm:px-10 xs:py-2 xl:h-[95vh] lg:h-[90vh] sm:py-8 mx-auto"
       >
         <div className="flex gap-4   items-center">
           <Image

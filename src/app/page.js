@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 
 import "@/app/utils/page.css";
 import HeroSecond from "./components/HeroSecondComp";
+import Client from "./components/Client";
 
 export default function Home() {
   useEffect(() => {
@@ -69,9 +70,13 @@ export default function Home() {
       <section className="panel second">
         <HeroSecond />
       </section>
+      <section className="panel third">
+        <Client />
+      </section>
 
-      {/* <Hero /> */}
-      {/* <HeroSecond /> */}
+      {/* <section className="panel third">
+        <Client />
+      </section> */}
     </>
   );
 }

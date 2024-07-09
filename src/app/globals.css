@@ -6,3 +6,12 @@
   /* width: 10%; */
   /* background-color: aquamarine; */
 }
+.carousel-item {
+  margin: 0 8px; /* Default margin for larger screens */
+}
+
+@media (max-width: 464px) {
+  .carousel-item {
+    margin: 0 4px; /* Margin for xs screens */
+  }
+}
