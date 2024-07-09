@@ -12,7 +12,6 @@ const Nav = () => {
     it: false,
     cyber: false,
     digital: false,
-    about: false,
   });
 
   const toggleMenu = () => {
@@ -27,27 +26,26 @@ const Nav = () => {
     { label: "IT Infrastructure", key: "it" },
     { label: "Cybersecurity", key: "cyber" },
     { label: "Digital Transformation", key: "digital" },
-    { label: "About Us", key: "about" },
   ];
 
   return (
-    <nav className="2xl:max-w-[1728px] mx-auto text-white">
-      <div className="flex items-center justify-between py-7">
+    <nav className="2xl:max-w-[1728px] text-white relative z-10">
+      <div className="flex items-center justify-between py-5">
         <div className="cursor-pointer">
           <a href="/">
             <Image
-              src="/nav_logo.png"
+              src="/nav-logo.svg"
               width={100}
               height={100}
               alt="Logo"
-              className="lg:w-[7rem] sm:w-[8rem] xs:w-[8rem]"
+              className="xl:w-[10rem] lg:w-[7rem] sm:w-[8rem] xs:w-[8rem]"
             />
           </a>
         </div>
         <div className="flex items-center lg:hidden">
           <button
             type="button"
-            className="text-white bg-[#C92127] xl:px-[32px]  xs:px-[16px] xs:py-[2px] xl:py-[6px] 2xl:py-[10px] 2xl:px-[41px] rounded-[5px] lg:hidden"
+            className="text-white bg-[#C92127] p-2 rounded lg:hidden"
           >
             Get A Quote
           </button>
@@ -55,11 +53,11 @@ const Nav = () => {
             <FiMenu size={24} />
           </button>
         </div>
-        <ul className="hidden lg:flex gap-5">
+        <ul className="hidden lg:flex lg:gap-2 xl:gap-3">
           {menuItems.map((item) => (
             <li
               key={item.key}
-              className="relative text-base cursor-pointer flex items-center"
+              className="relative text-base cursor-pointer flex items-center font-normal font-ClashDisplay"
               onClick={() => toggleDropdown(item.key)}
             >
               {item.label} <RiArrowDropDownLine />
@@ -72,25 +70,28 @@ const Nav = () => {
               )}
             </li>
           ))}
+          <li className="relative text-base cursor-pointer flex items-center font-normal font-ClashDisplay">
+            <a href="/about-us">About Us</a>
+          </li>
         </ul>
         <ul className="hidden lg:flex items-center gap-5">
           <div className="flex items-center">
             <div className="border border-white w-[80px] h-px flex-grow ml-2 hidden sm:block md:hidden xl:block" />
             <li className="cursor-pointer ml-3">
-              <FaFacebookF size={25} />
+              <FaFacebookF size={22} />
             </li>
             <li className="cursor-pointer text-red-500 mx-3">
-              <FaLinkedinIn size={25} />
+              <FaLinkedinIn size={22} />
             </li>
             <li className="cursor-pointer mr-3">
-              <FaTwitter size={25} />
+              <FaTwitter size={22} />
             </li>
             <div className="border border-white w-[80px] h-px flex-grow ml-2 hidden sm:block md:hidden xl:block" />
           </div>
         </ul>
         <button
           type="button"
-          className="hidden lg:block text-white bg-[#C92127] xl:px-[32px]  xs:px-[16px] xs:py-[2px] xl:py-[6px] 2xl:py-[10px] 2xl:px-[41px] rounded-[5px]"
+          className="hidden lg:block text-white bg-[#C92127] p-1 lg:p-3 rounded"
         >
           Get A Quote
         </button>
@@ -101,10 +102,10 @@ const Nav = () => {
             {menuItems.map((item) => (
               <li
                 key={item.key}
-                className="cursor-pointer flex flex-col items-start"
+                className="cursor-pointer flex flex-col items-start font-normal font-ClashDisplay"
                 onClick={() => toggleDropdown(item.key)}
               >
-                <div className="flex items-center">
+                <div className="flex items-center font-normal font-ClashDisplay">
                   {item.label} <RiArrowDropDownLine />
                 </div>
                 {dropdownOpen[item.key] && (
@@ -116,6 +117,9 @@ const Nav = () => {
                 )}
               </li>
             ))}
+            <li className="cursor-pointer">
+              <a href="/about-us">About Us</a>
+            </li>
             <li className="cursor-pointer">
               <FaFacebookF />
             </li>
