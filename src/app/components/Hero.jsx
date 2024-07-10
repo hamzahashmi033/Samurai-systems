@@ -21,7 +21,6 @@ const Hero = () => {
             <span className="2xl:text-[30px]  xl:text-[20px]  sm:text-[18px] font-[300]">
               Turning Your Challenges
             </span>
-            <br />
             <div className="flex ">
               <span className="sm:tracking-wider 2xl:text-[67px] xl:text-[48px] xs:text-[24px] text-Red font-[400] font-Neuropal">
                 <Typewriter
@@ -36,7 +35,7 @@ const Hero = () => {
                 &nbsp;Solutions
               </span>
             </div>
-            <br />{" "}
+
             <span className="text-White font-[500] 2xl:text-[67px] xl:text-[48px] xs:text-[24px]">
               Samurai Systems
             </span>
