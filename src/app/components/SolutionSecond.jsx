@@ -118,7 +118,7 @@ const SolutionsSecondComp = () => {
                                 src={"/solution.png"}
                                 width={621}
                                 height={626}
-                                className="lg:w-[400px] sm:h-[300px] 2xl:w-[621px] sm:object-fit "
+                                className="lg:w-[400px] xs:hidden sm:block sm:h-[300px] 2xl:w-[621px] sm:object-fit "
                             // className=" w-full 2xl:w-[621px]  h-[626px] xs:w-[85vw] xs:h-[280px]   "
                             />
                         </div>

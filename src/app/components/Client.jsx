@@ -26,7 +26,7 @@ export default function Client() {
           <div className="xs:mb-4 sm:mb-12">
             <div className="text-White xs:justify-center sm:justify-start flex gap-2">
               <Image
-                src={"/line4.svg"}
+                src={"/Line4.svg"}
                 width={100}
                 height={100}
                 className="2xl:w-[129px] xs:w-[20px] lg:w-[70px]"

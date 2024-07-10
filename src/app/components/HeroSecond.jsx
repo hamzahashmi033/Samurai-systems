@@ -53,7 +53,7 @@ const responsive = {
 
 const HeroSecondComp = () => {
   return (
-    <div className="bg-Black xs:overflow-hidden h-[100vh] font-ClashDisplay flex items-center  px-8">
+    <div className="bg-Black xs:overflow-hidden h-screen font-ClashDisplay flex items-center  px-8">
       <div
         style={{
           background:

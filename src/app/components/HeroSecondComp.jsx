@@ -121,7 +121,7 @@ const HeroSecondComp = () => {
             {Img.map((img, index) => (
               <div
                 key={index}
-                className="bg-[#1D1D1D] sm:h-[60px] xs:h-[40px] 2xl:h-[84px] flex justify-center items-center sm:w-[25vw] xs:w-[50vw] 2xl:w-[10vw] rounded-lg"
+                className="bg-[#1D1D1D] xs:hidden md:block  sm:h-[60px] xs:h-[40px] 2xl:h-[84px] flex justify-center items-center sm:w-[25vw] xs:w-[50vw] 2xl:w-[10vw] rounded-lg"
               >
                 <Image
                   src={img.path}
