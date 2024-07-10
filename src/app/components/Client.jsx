@@ -12,7 +12,7 @@ export default function Client() {
       <div className="sm:container overflow-x-hidden overflow-y-hidden lg:container xs:px-4 sm:px-8 lg:px-8  relative sm:mx-auto">
         <div className="2xl:max-w-[1526px] w-[85vw]   mx-auto">
           <div className="sm:py-10 xs:py-4 text-White   sm:mb-0">
-            <h2 className="font-[300] xs:text-[22px] sm:text-[32px]    2xl:text-[66.66px] xs:text-center sm:text-end ">
+            <h2 className="font-[300] xs:text-[22px] sm:text-[32px] 2xl:mr-6    2xl:text-[66.66px] xs:text-center sm:text-end ">
               Excellence <br />
               <span className="font-[500] xs:text-[24px] sm:text-[34px] 2xl:text-[109px]  ">
                 and Innovations
@@ -35,8 +35,8 @@ export default function Client() {
                 Our Partners
               </p>
             </div>
-            <div className="flex sm:justify-between xs:justify-center items-center ">
-              <div className="">
+            <div className="flex sm:justify-between xs:justify-center  2xl:mr-6 items-center ">
+              <div className=" ">
                 <h3 className="font-[400] 2xl:text-[40px] xs:text-center sm:text-start xs:text-[18px] sm:text-[24px]  text-White">
                   <span className="text-Red ">Our</span> Stack Partners
                 </h3>
@@ -54,7 +54,7 @@ export default function Client() {
               </p>
             </div>
           </div>
-          <div>
+          <div className=" 2xl:mr-6">
             <Box
               sx={{
                 flexGrow: 1,
