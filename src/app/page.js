@@ -11,6 +11,7 @@ import HeroSecond from "./components/HeroSecond";
 import Client from "./components/Client";
 import Solutions from "./components/SolutionsScroll";
 import Foot from "./components/Foot";
+import SolutionsSecondComp from "./components/SolutionSecond";
 
 export default function Home() {
   useEffect(() => {
@@ -79,13 +80,16 @@ export default function Home() {
       <section className="panel third">
         <Client />
       </section>
-        <section className="panel third">
+      <section className="panel third">
         <Solutions />
-      </section> 
-      <section className="panel fourth relative">
+      </section>
+      <section className="panel fourth">
+        <SolutionsSecondComp />
+      </section>
+      <section className="panel fivth relative">
         <Foot />
       </section>
-    
+
 
       {/* <section className="panel fourth">
         <Hero />
@@ -101,7 +105,7 @@ export default function Home() {
       </section>
       <section className="panel eigth">
         <Hero />
-      </section> */} 
+      </section> */}
 
       {/* <section className="panel third"> */}
       {/* <Solutions /> */}

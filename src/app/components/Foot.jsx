@@ -12,7 +12,7 @@ const Foot = () => {
   return (
     <div className="relative flex flex-col min-h-screen xs:overflow-hidden">
       <div className="sm:container lg:container mx-auto">
-        <div className="flex flex-col justify-center items-center border shadow-lg xl:p-6 lg:p-3 sm:p-2 xs:m-1 xl:m-[5rem] lg:m-[3rem] md:m-[2rem]">
+        <div className="flex flex-col justify-center items-center border shadow-lg xl:p-2 lg:p-2 sm:p-2 xs:m-1 xl:m-[5rem] lg:m-[3rem] md:m-[2rem]">
           <ReUse
             p1="Elevate you Presents"
             span1="Ready TO"
@@ -23,7 +23,7 @@ const Foot = () => {
 
           <button
             type="button"
-            className="bg-black w-[15rem] text-white px-4 py-2 m-5 font-semi bold rounded text-sm sm:text-base lg:text-lg"
+            className="bg-black w-[15rem] text-white px-4 py-2 mx-5 my-0 font-semi bold rounded text-sm sm:text-base lg:text-lg"
           >
             {" "}
             Book Consultation{" "}
@@ -39,7 +39,7 @@ const Foot = () => {
               className="mx-auto lg:mx-0 lg:w-[140px]"
             />
 
-            <p className="lg:pt-6 xs:pt-3 xs:pb-3 lg:text-xs">
+            <p className="lg:pt-0 xs:pt-3 xs:pb-3 lg:text-xs">
               Samurai - Team of solution architects, developers, and consultants
               having only one aim in mind{" "}
               <span className="font-bold">
@@ -75,8 +75,8 @@ const Foot = () => {
         </div>
       </div>
 
-      <div className="w-full mt-auto">
-        <p className="w-full text-center text-white bg-black md:p-5 lg:p-2 text-sm xs:p-2">
+      <div className="w-full mt-auto mb-4">
+        <p className="w-full text-center text-white bg-black md:p-2 lg:p-2 text-sm xs:p-2">
           All Rights Reserved | Copyrights ©2024
         </p>
       </div>
