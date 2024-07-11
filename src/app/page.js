@@ -14,6 +14,7 @@ import Solutions from "./components/SolutionsScroll";
 import Foot from "./components/Foot";
 import SolutionsSecondComp from "./components/SolutionSecond";
 import ClientImage from "./components/ClientImage";
+import HeroSecondWithoutAnimation from "./components/HeroSecondWithoutAnimation";
 
 export default function Home() {
   // useEffect(() => {
@@ -75,6 +76,9 @@ export default function Home() {
     <>
       <section className="panel first">
         <Hero />
+      </section>
+      <section className="xs:block sm:hidden  second">
+        <HeroSecondWithoutAnimation />
       </section>
       <section className="second">
         <HeroSecond />
