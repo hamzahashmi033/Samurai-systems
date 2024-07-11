@@ -135,9 +135,9 @@ const HeroSecondComp = () => {
             {/* <div className="w-[50%]">ahYn</div> */}
           </Carousel>
         </div>
-        <div className="text-White xs:mt-4  2xl:text-[18px]  xs:text-[14px] font-[400] text-center">
+        <div className="text-White xs:mt-4 md-6 2xl:text-[18px]  xs:text-[10px] font-[400] text-center">
           <p>
-            2.6k Companies & Individuals{" "}
+            <span > 2.6k</span> Companies & Individuals{" "}
             <span className="font-[600]">Trusted Us</span>
           </p>
         </div>
