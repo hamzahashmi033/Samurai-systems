@@ -53,13 +53,13 @@ const responsive = {
 
 const HeroSecondComp = () => {
   return (
-    <div className="bg-Black xs:overflow-hidden h-screen font-ClashDisplay flex items-center  px-8">
+    <div className="bg-Black xs:overflow-hidden font-ClashDisplay flex items-center  px-2">
       <div
         style={{
           background:
             "linear-gradient(180deg, rgba(24, 24, 21, 0.25) 0%, rgba(24, 24, 21, 0.25) 100%)",
         }}
-        className="  xl:container overflow-hidden 2xl:h-[80vh]  xs:w-[95vw]  bg my-auto border border-[#3A3A3A] rounded-2xl px-4 sm:px-10 xs:py-2 xl:h-[95vh] lg:h-[90vh] sm:py-8 mx-auto"
+        className="xl:container overflow-hidden 2xl:h-[80vh]  xs:w-[95vw]  bg my-auto border border-[#3A3A3A] rounded-2xl px-2 sm:px-10 xs:py-2 xl:h-[95vh] lg:h-[90vh] sm:py-8 mx-auto"
       >
         <div className="flex gap-4   items-center">
           <Image
@@ -73,7 +73,7 @@ const HeroSecondComp = () => {
           </p>
         </div>
         <div className="text-White flex xs:flex-col sm:flex-row lg:justify-between lg:items-start  ">
-          <div>
+          {/* <div>
             {" "}
             <h2 className="2xl:text-[40px] xl:text-[32px] font-Neuropal xs:text-[18px] sm:text-[28px] font-[400] 2xl:leading-[44px] 2xl:mt-[31px]  sm:text-left">
               <span className="text-Red">Bridging The Gap</span> Between
@@ -81,7 +81,7 @@ const HeroSecondComp = () => {
             <p className="2xl:text-[40px] xl:text-[32px] xs:text-[16px] sm:text-[28px]  2xl:leading-[44px] font-[500] mt-[6px] lg:text-left">
               you and your audience
             </p>
-          </div>
+          </div> */}
 
           <p className="xl:text-[18px]  lg:text-[12px]  hidden lg:block text-left">
             We not only deliver high quality enterprise solutions but also
@@ -91,10 +91,10 @@ const HeroSecondComp = () => {
             <br /> as a single stack.
           </p>
         </div>{" "}
-        <div className="flex xs:flex-col   sm:flex-row 2xl:mt-16 sm:gap-[40px]  lg:mt-2 justify-between xs:ml-20 lg:ml-10 2xl:py-10 2xl:px-8 xs:py-0 xs:px-6  ">
+        <div className="flex xs:flex-col sm:flex-row 2xl:mt-16 sm:gap-[40px]  lg:mt-2 justify-between xs:ml-20 lg:ml-10 2xl:py-10 2xl:px-8 xs:py-0 xs:px-6 ">
           {Icons.map((icon) => (
-            <div className="relative mt-10 md:w-[20%] mx-auto ">
-              <p className="text-[#252525] font-Poppins sm:top-[-53px] sm:left-[-65px] xs:top-[-13px] xs:left-[-55px] sm:text-[86px] xs:text-[40px] font-[800] absolute z-10">
+            <div className="relative mt-2 md:w-[20%] mx-auto ">
+              <p className="text-[#252525] font-Poppin s sm:top-[-53px] sm:left-[-65px] xs:top-[-13px] xs:left-[-55px] sm:text-[86px] xs:text-[40px] font-[800] absolute z-10">
                 {icon.Num}
               </p>
               <p className="text-white  z-50 font-[600] xs:text-[12px] sm:text-[16px] relative">

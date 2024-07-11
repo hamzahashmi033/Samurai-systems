@@ -47,21 +47,21 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1,
+    items: 2,
   },
 };
 
 const HeroSecondComp = () => {
   return (
-    <div className="bg-Black xs:overflow-hidden h-screen font-ClashDisplay flex items-center  px-8">
+    <div className="bg-Black xs:overflow-hidden font-ClashDisplay flex items-center pt-8  px-2">
       <div
         style={{
           background:
             "linear-gradient(180deg, rgba(24, 24, 21, 0.25) 0%, rgba(24, 24, 21, 0.25) 100%)",
         }}
-        className="  xl:container overflow-hidden 2xl:h-[80vh]   xs:w-[95vw]  bg my-auto border border-[#3A3A3A] rounded-2xl px-4 sm:px-10 xs:py-2 xl:h-[95vh] lg:h-[90vh] sm:py-8 mx-auto"
+        className="  xl:container overflow-hidden 2xl:h-[80vh] xs:w-[95vw] my-auto border border-[#3A3A3A] rounded-2xl px-4 sm:px-10 xs:py-2 xl:h-[95vh] lg:h-[90vh] sm:py-8 mx-auto"
       >
-        <div className="flex gap-4   items-center">
+        <div className="flex gap-4  px-4  items-center">
           <Image
             src={"/Line4.svg"}
             width={129}
@@ -75,10 +75,10 @@ const HeroSecondComp = () => {
         <div className="text-White xs:mb-8 sm:mb-0 flex xs:flex-col sm:flex-row lg:justify-between lg:items-start  ">
           <div>
             {" "}
-            <h2 className="2xl:text-[40px] xl:text-[32px] font-Neuropal xs:text-[18px] sm:text-[28px] font-[400] 2xl:leading-[44px] 2xl:mt-[31px]  sm:text-left">
+            <h2 className="2xl:text-[40px] xl:text-[32px] font-Neuropal xs:text-[18px] sm:text-[28px] font-[400] 2xl:leading-[44px] 2xl:mt-[31px] px-4 sm:text-left">
               <span className="text-Red">Bridging The Gap</span> Between
             </h2>
-            <p className="2xl:text-[40px] xl:text-[32px] xs:text-[16px] sm:text-[28px]  2xl:leading-[44px] font-[500] mt-[6px] lg:text-left">
+            <p className="2xl:text-[40px] xl:text-[32px] px-4 xs:text-[16px] sm:text-[28px]  2xl:leading-[44px] font-[500] mt-[6px] lg:text-left">
               you and your audience
             </p>
           </div>
@@ -91,23 +91,23 @@ const HeroSecondComp = () => {
             <br /> as a single stack.
           </p>
         </div>{" "}
-        <div className="flex xs:flex-col xs:mb-16  sm:mb-0 xl:mb-16   sm:flex-row 2xl:mt-16 sm:gap-[40px]  lg:mt-2 justify-between xs:ml-20 lg:ml-10 2xl:py-10 2xl:px-8 xs:py-0 xs:px-6  ">
+        <div className="flex xs:flex-col xs:mb-12  sm:mb-0 xl:mb-16   sm:flex-row 2xl:mt-16 sm:gap-[40px]  lg:mt-2 justify-between xs:ml-20 lg:ml-10 2xl:py-10 2xl:px-8 xs:py-0 xs:px-6  ">
           {Icons.map((icon) => (
             <div className="relative mt-10 md:w-[20%] mx-auto ">
-              <p className="text-[#252525] font-Poppins sm:top-[-53px] sm:left-[-65px] xs:top-[-13px] xs:left-[-55px] sm:text-[86px] xs:text-[40px] font-[800] absolute z-10">
+              <p className="text-[#252525] font-Poppins sm:top-[-53px] sm:left-[-65px] xs:top-[-28px] xs:left-[-55px] sm:text-[86px] xs:text-[65px] font-[800] absolute z-10">
                 {icon.Num}
               </p>
               <p className="text-white  z-50 font-[600] xs:text-[12px] sm:text-[16px] relative">
                 {icon.Title}
               </p>
-              <p className="text-White  sm:text-[14px]  2xl:text-[18px] xs:hidden xl:block xs:text-[10px] font-[300] xs:mt-4  sm:mt-6">
+              <p className="text-White  sm:text-[14px]  2xl:text-[18px]  xl:block xs:text-[10px] font-[300] xs:mt-4  sm:mt-6">
                 {" "}
                 {icon.Description}
               </p>
             </div>
           ))}
         </div>
-        <div className="xs:mt-2 overflow-x-hidden xs:mb-8  sm:mb-0 xl:mb-8  2xl:h-[84px] 2xl:mt-32 xs:w-[50vw] sm:w-[80vw] lg:w-[90vw] 2xl:w-[50vw] mx-auto ">
+        <div className="xs:mt-2 overflow-x-hidden xs:mb-8  sm:mb-0 xl:mb-8  2xl:h-[84px] 2xl:mt-32 xs:w-[55vw] sm:w-[80vw] lg:w-[90vw] 2xl:w-[50vw] mx-auto ">
           <Carousel
             responsive={responsive}
             autoPlay={true}
@@ -121,13 +121,13 @@ const HeroSecondComp = () => {
             {Img.map((img, index) => (
               <div
                 key={index}
-                className="bg-[#1D1D1D] sm:h-[60px] xs:h-[60px] 2xl:h-[84px] flex justify-center items-center sm:w-[25vw] xs:w-[50vw] 2xl:w-[10vw] rounded-lg"
+                className="bg-[#1D1D1D] sm:h-[60px] xs:h-[60px] 2xl:h-[84px] flex justify-evenly items-center  sm:w-[25vw] xs:w-[25vw] 2xl:w-[10vw] rounded-lg"
               >
                 <Image
                   src={img.path}
-                  width={110}
+                  width={80}
                   height={20}
-                  className="object-contain"
+                  className="object-contain xs:w-[50px]"
                   alt={`Carousel image ${index + 1}`}
                 />
               </div>

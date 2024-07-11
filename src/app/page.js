@@ -6,81 +6,83 @@ import Hero from "./components/Hero";
 // import Solutions from "./components/SolutionsScroll";
 // import MainFooter from "./components/MainFooter";
 // import SolutionsSecondComp from "./components/SolutionsSecondComp";
+
 import "@/app/utils/page.css";
 import HeroSecond from "./components/HeroSecond";
 import Client from "./components/Client";
 import Solutions from "./components/SolutionsScroll";
 import Foot from "./components/Foot";
 import SolutionsSecondComp from "./components/SolutionSecond";
+import ClientImage from "./components/ClientImage";
 
 export default function Home() {
-  useEffect(() => {
-    const { gsap } = require("gsap");
-    const { ScrollTrigger, ScrollToPlugin } = require("gsap/all");
-    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+  // useEffect(() => {
+  //   const { gsap } = require("gsap");
+  //   const { ScrollTrigger, ScrollToPlugin } = require("gsap/all");
+  //   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-    let panels = gsap.utils.toArray(".panel");
-    let observer = ScrollTrigger.normalizeScroll(true);
-    let scrollTween;
+  //   let panels = gsap.utils.toArray(".panel");
+  //   let observer = ScrollTrigger.normalizeScroll(true);
+  //   let scrollTween;
 
-    const handleTouchStart = (e) => {
-      if (scrollTween) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
-      }
-    };
+  //   const handleTouchStart = (e) => {
+  //     if (scrollTween) {
+  //       e.preventDefault();
+  //       e.stopImmediatePropagation();
+  //     }
+  //   };
 
-    document.addEventListener("touchstart", handleTouchStart, {
-      capture: true,
-      passive: false,
-    });
+  //   document.addEventListener("touchstart", handleTouchStart, {
+  //     capture: true,
+  //     passive: false,
+  //   });
 
-    function goToSection(i) {
-      scrollTween = gsap.to(window, {
-        scrollTo: { y: i * innerHeight, autoKill: false },
-        onStart: () => {
-          observer.disable();
-          observer.enable();
-        },
-        duration: 1,
-        onComplete: () => (scrollTween = null),
-        overwrite: true,
-      });
-    }
+  //   function goToSection(i) {
+  //     scrollTween = gsap.to(window, {
+  //       scrollTo: { y: i * innerHeight, autoKill: false },
+  //       onStart: () => {
+  //         observer.disable();
+  //         observer.enable();
+  //       },
+  //       duration: 1,
+  //       onComplete: () => (scrollTween = null),
+  //       overwrite: true,
+  //     });
+  //   }
 
-    panels.forEach((panel, i) => {
-      ScrollTrigger.create({
-        trigger: panel,
-        start: "top bottom",
-        end: "+=199%",
-        onToggle: (self) => self.isActive && !scrollTween && goToSection(i),
-      });
-    });
+  //   panels.forEach((panel, i) => {
+  //     ScrollTrigger.create({
+  //       trigger: panel,
+  //       start: "top bottom",
+  //       end: "+=199%",
+  //       onToggle: (self) => self.isActive && !scrollTween && goToSection(i),
+  //     });
+  //   });
 
-    ScrollTrigger.create({
-      start: 0,
-      end: "max",
-      snap: 1 / (panels.length - 1),
-    });
+  //   ScrollTrigger.create({
+  //     start: 0,
+  //     end: "max",
+  //     snap: 1 / (panels.length - 1),
+  //   });
 
-    return () => {
-      document.removeEventListener("touchstart", handleTouchStart);
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("touchstart", handleTouchStart);
+  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  //   };
+  // }, []);
 
   return (
     <>
       <section className="panel first">
         <Hero />
       </section>
-      <section className="panel second">
+      <section className="second">
         <HeroSecond />
       </section>
-      <section className="panel third">
+      <section className="third">
         <Client />
       </section>
-      <section className="panel third">
+      <section className=" third">
         <Solutions />
       </section>
       <section className="panel fourth">
